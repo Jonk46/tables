@@ -1,10 +1,8 @@
 html { margin:0; padding:0;}
-body { margin:0; padding:0; TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; background:#fff;}
+body { margin:0; padding:0; "Times New Roman", Times, Baskerville, Georgia, serif; background:#fff;}
 .clear { clear:both;}
-
 a {text-decoration:none;}
 a:hover {text-decoration:none;}
-
 h1, h2, h3, h4, h5, h6 { margin:0; padding:0;}
 form, menu, iframe { display:block; margin:0; padding:0; border:none;}
 ol, ul, dl, li, dt, dd { margin:0; padding:0; list-style:none;}
@@ -24,7 +22,9 @@ span {
     color: #ff0000;
 }
 
-menu {
+/*first menu*/
+
+menu.men-1 {
     display: table;
     width: 100%;
     table-layout: fixed;
@@ -33,14 +33,14 @@ menu {
     background: #cfcfcf;
 }
 
-menu li {
+menu.men-1 li {
     display: table-cell;
     vertical-align: middle;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
 
-menu li a {
+menu.men-1 li a {
     color: #000000;
     font-size: 20px;
     font-style: normal;
@@ -49,6 +49,38 @@ menu li a {
     line-height: 26px;
 }
 
-menu li:hover:nth-child(odd) {
+menu.men-1 li:hover:nth-child(odd) {
+    background: #afafaf;
+}
+.menu-between {
+    padding-top: 50px;
+}
+/*second menu*/
+
+menu.men-2 {
+    display: table;
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    background: #cfcfcf;
+}
+
+menu.men-2 li {
+    display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+menu.men-2 li a {
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+menu.men-2 li:hover {
     background: #afafaf;
 }
