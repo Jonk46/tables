@@ -113,20 +113,11 @@ menu.men-3 li a {
     line-height: 26px;
 }
 
-menu.men-3 li:hover, .dropdown:hover {
-    background-color: #afafaf;
-}
-
-.dropdown-content {
+menu.men-3 li ul.dropdown-content {
     display: none;
     position: absolute;
-    min-width: 176px;
     background-color: #cfcfcf;
 }
-
-menu.men-3 ul.dropdown-content li {
-    display: table-row;
-  }
 
 .dropdown-content a{
     display: block;
@@ -134,16 +125,20 @@ menu.men-3 ul.dropdown-content li {
     text-align: center;
 }
 
+menu.men-3 li:hover, .dropdown:hover {
+    background-color: #afafaf;
+}
+
+menu.men-3 ul.dropdown-content li {
+    display: table-row;
+  }
+
 .dropdown-content li a:hover {
     background-color: #afafaf;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-menu.men-3 li.sprit {
-    width: 250px;
 }
 
 .home {
