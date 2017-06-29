@@ -172,7 +172,7 @@ ul.minesprit li {
     border: none;
 }
 
-a.skype, a.google, a.gb {
+a.skype, a.google, a.tw {
     text-indent: -9000px;
 }
 
@@ -206,12 +206,12 @@ a.skype, a.google, a.gb {
     background: url(../images/sprite.png) no-repeat -34px 0;
 }
 
-.gb {
+.tw {
     position: relative;
     display: inline-block;
 }
 
-.gb:before {
+.tw:before {
     content: "";
     position: absolute;
     left: 151px;
