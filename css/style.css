@@ -13,7 +13,7 @@ ol, ul, dl, li, dt, dd { margin:0; padding:0; list-style:none;}
     margin: 0 auto;
 }
 
-h1 {
+h1.menu {
     color: #0051ac;
     padding: 85px 0 45px;
 }
