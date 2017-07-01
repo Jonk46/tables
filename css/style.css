@@ -8,18 +8,27 @@ form, menu, iframe { display:block; margin:0; padding:0; border:none;}
 ol, ul, dl, li, dt, dd { margin:0; padding:0; list-style:none;}
 * { outline:none;}
 
+
 .resize {
-    width: 800px;
+    width: 880px;
     margin: 0 auto;
 }
 
-h1.table {
-    color: #0051ac;
+h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 54px;
     padding: 85px 0 45px;
 }
 
-span {
+h1:first-letter {
     color: #ff0000;
+}
+
+h1:first-line{
+    color: #0051ac;
 }
 
 table.table1 {
