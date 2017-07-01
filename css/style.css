@@ -13,63 +13,62 @@ ol, ul, dl, li, dt, dd { margin:0; padding:0; list-style:none;}
     margin: 0 auto;
 }
 
-h1.table {
+h1.span_table {
     color: #0051ac;
     padding: 85px 0 45px;
 }
 
-span {
+span.text {
     color: #ff0000;
 }
 
-table.table1 {
+div.head, .bod-table {
     width: 100%;
-    border-collapse: collapse;
+    display: table;
 }
 
-thead {
+div.head {
     font-size: 20px;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
     line-height: 26px;
+    text-align: center;
     background: #afafaf;
 }
 
-tr.fon {
+div.bod-table {
     font-size: 20px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
     line-height: 26px;
     background: #dfdfdf;
+    text-align: justify;
 }
 
-tr.fon:hover {
+div.bod-table:hover {
     background: #afafaf;
 }
 
-td.right {
-    padding-right: 10px;
-    text-align: right;
+p {
+    display: table-cell;
+ }
+
+p.year {
+    width: 120px;
 }
 
-td.center {
+p.left {
+    width: 450px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+p.center {
     text-align: center;
 }
 
-th.bord1 {
-    border-bottom: 2px solid #ffffff;
-}
-
-th.bord-right {
-    border-right: 2px solid #ffffff;
-}
-
-tr.fon:nth-child(odd) {
-    border-bottom: 2px solid #ffffff;
-}
-
-tr.fon td:nth-child(3) {
-    border-right: 2px solid #ffffff;
+p.author {
+    width: 353px;
 }
