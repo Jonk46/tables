@@ -1,0 +1,75 @@
+html { margin:0; padding:0;}
+body { margin:0; padding:0; "Times New Roman", Times, Baskerville, Georgia, serif; background:#fff;}
+.clear { clear:both;}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0;}
+form, menu, iframe { display:block; margin:0; padding:0; border:none;}
+ol, ul, dl, li, dt, dd { margin:0; padding:0; list-style:none;}
+* { outline:none;}
+
+.resize {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1.table {
+    color: #0051ac;
+    padding: 85px 0 45px;
+}
+
+span {
+    color: #ff0000;
+}
+
+table.table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+    background: #afafaf;
+}
+
+tr.fon {
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 26px;
+    background: #dfdfdf;
+}
+
+tr.fon:hover {
+    background: #afafaf;
+}
+
+td.right {
+    padding-right: 10px;
+    text-align: right;
+}
+
+td.center {
+    text-align: center;
+}
+
+th.bord1 {
+    border-bottom: 2px solid #ffffff;
+}
+
+th.bord-right {
+    border-right: 2px solid #ffffff;
+}
+
+tr.fon:nth-child(odd) {
+    border-bottom: 2px solid #ffffff;
+}
+
+tr.fon td:nth-child(3) {
+    border-right: 2px solid #ffffff;
+}
