@@ -13,43 +13,50 @@ ol, ul, dl, li, dt, dd { margin:0; padding:0; list-style:none;}
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 48px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 54px;
+h1.menu {
+    color: #0051ac;
     padding: 85px 0 45px;
 }
 
-h1:first-letter {
+span {
     color: #ff0000;
 }
 
-h1:first-line{
-    color: #0051ac;
-}
-
-
 /*first menu*/
 
-menu.men-1 {
-    display: table;
+menu.men1 {
     width: 100%;
     table-layout: fixed;
-    height: 38px;
+    display: table;
+    font-size: 100%;
+}
+menu.men1 li {
+    display: table-cell;
+    list-style: none;
     text-align: center;
     background: #cfcfcf;
-}
-
-menu.men-1 li {
-    display: table-cell;
-    vertical-align: middle;
+    position: relative;
+    padding: 9px 0;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
-
-menu.men-1 li a {
+menu.men1 li ul {
+    list-style: none;
+    width: 150px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+}
+menu.men1 li ul li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border: none;
+}
+menu.men1 li a {
+    display: block;
+    text-decoration: none;
     color: #000000;
     font-size: 20px;
     font-style: normal;
@@ -57,14 +64,22 @@ menu.men-1 li a {
     font-weight: 500;
     line-height: 26px;
 }
+menu.men1 li:hover ul {
+    display: block;
+}
 
-menu.men-1 li:hover:nth-child(odd) {
+menu.men1 li:hover:nth-child(odd) {
     background: #afafaf;
 }
+
+
+
+
+/*second menu*/
+
 .menu-between {
     padding-top: 50px;
 }
-/*second menu*/
 
 menu.men-2 {
     display: table;
@@ -93,6 +108,8 @@ menu.men-2 li a {
 menu.men-2 li:hover {
     background: #afafaf;
 }
+
+
 
 /*third menu*/
 
