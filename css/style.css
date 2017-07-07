@@ -33,7 +33,6 @@ h1:first-line{
 
 table.table1 {
     width: 100%;
-    border-collapse: collapse;
 }
 
 thead {
@@ -67,18 +66,7 @@ td.center {
     text-align: center;
 }
 
-th.bord1 {
-    border-bottom: 2px solid #ffffff;
-}
-
-th.bord-right {
-    border-right: 2px solid #ffffff;
-}
-
-tr.fon:nth-child(odd) {
-    border-bottom: 2px solid #ffffff;
-}
-
-tr.fon td:nth-child(3) {
-    border-right: 2px solid #ffffff;
+.name {
+    padding-left: 10px;
+    text-align: left;
 }
