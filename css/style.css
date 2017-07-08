@@ -96,7 +96,8 @@ nav menu.men1 li ul.last_drop {
 }
 /*second menu*/
 
-.menu-between {
+nav.menu-between {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -145,12 +146,43 @@ menu.men-2 li:hover ul {
 
 menu.men-2 li ul li{
     display: inline-block;
-    width: 155px;
+    width: 150px;
     text-align: left;
     padding-left: 15px;
     background: #cfcfcf;
     border-bottom: 1px solid #fff;
 }
+/*drop*/
+menu.men-2 ul ul.drop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 167px;
+}
+
+menu.men-2 ul.drop li {
+    display: block;
+    top: 0;
+    left: 0;
+    background: #cfcfcf;
+}
+
+menu.men-2 ul.drop li:hover {
+    background: #afafaf;
+}
+
+menu.men-2 li.to-drop:hover ul.drop {
+    display: block;
+    background: #afafaf;
+}
+/*drop*/
+
+
+
+
+
+
+
 
 /*third menu*/
 nav.menu-between2 {
