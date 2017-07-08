@@ -155,6 +155,7 @@ menu.men-2 li ul li{
 
 menu.men-3 {
     display: table;
+    position: relative;
     width: 100%;
     height: 38px;
     text-align: center;
@@ -180,33 +181,46 @@ menu.men-3 li a {
 }
 
 menu.men-3 li ul.dropdown-content {
-    display: none;
     position: absolute;
+    z-index: 2;
+    display: block;
+    top: 23px;
     background-color: #cfcfcf;
 }
 
-.dropdown-content a{
+menu.men-3 li.dropdown ul.dropdown-content li a{
     display: block;
     color: black;
     text-align: center;
 }
 
-menu.men-3 li:hover, .dropdown:hover {
-    background-color: #afafaf;
+menu.men-3 li:hover {
+    background: #afafaf;
 }
 
-menu.men-3 ul.dropdown-content li {
-    display: table-row;
-  }
+menu.men-3 li.dropdown:hover ul.dropdown-content li {
+    display: block;
+    background: #afafaf;
+}
+
+menu.men-3 li ul.dropdown-content li {
+    display: block;
+    width: 155px;
+    background: #cfcfcf;
+    border-bottom: 1px solid #fff;
+}
+
+/*
+
 
 .dropdown-content li a:hover {
     background-color: #afafaf;
 }
 
-.dropdown:hover .dropdown-content {
+li.dropdown:hover ul.dropdown-content {
     display: block;
 }
-
+*/
 .home {
     position: relative;
 }
@@ -237,7 +251,7 @@ a.skype, a.google, a.tw {
     text-indent: -9000px;
 }
 
-.skype {
+.skype, .google, .tw  {
     position: relative;
     display: inline-block;
   }
@@ -252,11 +266,6 @@ a.skype, a.google, a.tw {
     background: url(../images/sprite.png) 0 0;
 }
 
-.google {
-    position: relative;
-    display: inline-block;
-}
-
 .google:before {
     content: "";
     position: absolute;
@@ -265,11 +274,6 @@ a.skype, a.google, a.tw {
     width: 32px;
     height: 32px;
     background: url(../images/sprite.png) no-repeat -34px 0;
-}
-
-.tw {
-    position: relative;
-    display: inline-block;
 }
 
 .tw:before {
@@ -281,4 +285,3 @@ a.skype, a.google, a.tw {
     height: 32px;
     background: url(../images/sprite.png) no-repeat -68px 0;
 }
-
