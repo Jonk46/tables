@@ -1,5 +1,5 @@
 html { margin:0; padding:0;}
-body { margin:0; padding:0; "Times New Roman", Times, Baskerville, Georgia, serif; background:#fff;}
+body { margin:0; padding:0; min-height: 1000px; "Times New Roman", Times, Baskerville, Georgia, serif; background:#fff;}
 .clear { clear:both;}
 a {text-decoration:none;}
 a:hover {text-decoration:none;}
@@ -97,8 +97,8 @@ nav menu.men1 li ul.last_drop {
 /*second menu*/
 
 .menu-between {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 menu.men-2 {
@@ -146,24 +146,26 @@ menu.men-2 li:hover ul {
 menu.men-2 li ul li{
     display: inline-block;
     width: 155px;
+    text-align: left;
+    padding-left: 15px;
     background: #cfcfcf;
     border-bottom: 1px solid #fff;
 }
 
 /*third menu*/
-
+nav.menu-between2 {
+    padding-bottom: 150px;
+}
 menu.men-3 {
     display: table;
-    position: relative;
     width: 100%;
-    height: 38px;
     text-align: center;
-    overflow: hidden;
     background-color: #cfcfcf;
 }
 
 menu.men-3 li {
     display: table-cell;
+    position: relative;
     vertical-align: middle;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
@@ -176,37 +178,29 @@ menu.men-3 li a {
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 38px;
 }
 
-menu.men-3 li ul.dropdown-content {
+menu.men-3 ul.content {
+    display: none;
     position: absolute;
-    z-index: 2;
-    display: block;
-    top: 23px;
+    top: 39px;
+    left: 0;
     background-color: #cfcfcf;
 }
 
-menu.men-3 li.dropdown ul.dropdown-content li a{
-    display: block;
-    color: black;
-    text-align: center;
-}
-
-menu.men-3 li:hover {
-    background: #afafaf;
-}
-
-menu.men-3 li.dropdown:hover ul.dropdown-content li {
-    display: block;
-    background: #afafaf;
-}
-
-menu.men-3 li ul.dropdown-content li {
+menu.men-3 ul.content li {
     display: block;
     width: 155px;
-    background: #cfcfcf;
     border-bottom: 1px solid #fff;
+}
+
+menu.men-3 li:hover, li.dropdown:hover {
+    background-color: #afafaf;
+}
+
+menu.men-3 li.dropdown:hover ul.content {
+    display: block;
 }
 
 .home {
@@ -220,7 +214,7 @@ menu.men-3 li ul.dropdown-content li {
 menu.men-3 .home:before {
     position: absolute;
     content: "";
-    top: 0;
+    top: 6px;
     left: 12px;
     width: 24px;
     height: 24px;
@@ -239,7 +233,7 @@ a.skype, a.google, a.tw {
     text-indent: -9000px;
 }
 
-.skype, .google, .tw  {
+.skype {
     position: relative;
     display: inline-block;
 }
@@ -248,28 +242,39 @@ a.skype, a.google, a.tw {
     content: "";
     position: absolute;
     left: 163px;
-    top: -2px;
+    top: 3px;
     width: 32px;
     height: 32px;
     background: url(../images/sprite.png) 0 0;
+}
+
+.google {
+    position: relative;
+    display: inline-block;
 }
 
 .google:before {
     content: "";
     position: absolute;
     left: 187px;
-    top: -2px;
+    top: 3px;
     width: 32px;
     height: 32px;
     background: url(../images/sprite.png) no-repeat -34px 0;
+}
+
+.tw {
+    position: relative;
+    display: inline-block;
 }
 
 .tw:before {
     content: "";
     position: absolute;
     left: 151px;
-    top: -2px;
+    top: 3px;
     width: 32px;
-    height: 32px;
+    height: 38px;
     background: url(../images/sprite.png) no-repeat -68px 0;
 }
+
